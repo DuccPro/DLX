@@ -196,8 +196,7 @@ body.on li .on { display: inline; color: #a0872e; }
 	background-size: contain;
 }
 
-
 .dark-choco {
-	background: url("https://static.wikia.nocookie.net/cookierunkingdom/images/c/c9/Dark_choco_gacha_background.jpg") no-repeat center center;
+	background: url("https://static.wikia.nocookie.net/cookierunkingdom/images/c/c9/Dark_choco_gacha_background.jpg");
 	background-size: cover;
 }
