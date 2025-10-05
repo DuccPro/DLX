@@ -1,0 +1,199 @@
+/* Style */
+
+body {
+	margin: 0;
+	font-family: "Outfit", sans-serif;
+	color: white;
+	background-color: #121212;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/*Navigation Bar*/
+
+nav {
+	position: sticky;
+	top: 0;
+	padding: 10px 20px;
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	background-color: #121212;
+	z-index: 999;
+}
+
+nav a, .dropdown {
+	position: relative;
+	padding: 5px 10px;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	transition: color 0.3s ease, background-color 0.3s ease;
+	font-weight: bold;
+}
+
+nav a:hover {
+	background-color: #282828;
+	color: #a0872e;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	background-color: #282828;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.dropdown-menu a {
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+.dropdown-menu a:hover {
+	background-color: #3f3f3f;
+	color: #a0872e;
+}
+
+/* Banners */
+
+.panel {
+	display: grid;
+	overflow: hidden;
+}
+
+.header *, .banner * {
+	margin: 0;
+	text-shadow: 2px 2px 5px #000000;
+}
+
+.header {
+	grid-column: 1 / -1;
+	background-position: center;
+	background-size: cover;
+	padding: 20px;
+}
+
+.banner {
+	display: flex;
+	gap: 10px;
+	padding: 20px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.banner a {
+	padding: 10px 25px;
+	border: 2px solid white;
+	border-radius: 999px;
+	background: #00000010;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	transition: box-shadow 0.3s ease, transform 0.2s ease;
+	text-shadow: none;
+}
+
+.banner a:hover {
+	box-shadow: 0 0 10px 3px #FFFFFFCC;
+	transform: translateY(-2px);
+}
+
+/* Enhance */
+
+#enhance {
+	border: none;
+	background-color: #282828;
+	color: #a0872e;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 20px;
+	height: 36px;
+	width: 36px;
+	box-shadow: 0 0 5px 5px #00000029;
+	transition: box-shadow 0.3s ease, transform 0.2s ease;
+	z-index: 2;
+}
+
+#enhance:hover {
+	box-shadow: 0 0 10px 3px #a0872e;
+	transform: translateY(-2px);
+}
+
+li .off { display: none; }
+li .on { display: none; }
+body.off li .off { display: inline; }
+body.on li .on { display: inline; color: #a0872e; }
+
+
+/* Mobile Support */
+
+@media (min-width: 801px) {
+	main { padding: 20px; }
+	h1 { font-size: 4rem; }
+	h2 { font-size: 2rem; }
+	.panel {
+		margin: 0 auto;
+		grid-template-columns: 1fr 1fr;
+		border-radius: 20px;
+		max-width: 1000px;
+	}
+	.header {
+		padding: 40px;
+	}
+}
+
+/* Background Images */
+
+.guild-battle {
+	background-image: url("guild-battle.png");
+}
+
+.red-velvet-dragon {
+	background: 
+		url("https://static.wikia.nocookie.net/cookierunkingdom/images/a/a2/M80001_map_thumbnail.png") right no-repeat,
+		linear-gradient(135deg, #9F0712, #FFA2A2);
+	background-size: contain;
+}
+
+.avatar-of-destiny {
+	background: 
+		url("https://static.wikia.nocookie.net/cookierunkingdom/images/6/6f/M83001_map_thumbnail.png") right no-repeat,
+		linear-gradient(135deg, #FFDF20, #FEFCE8);
+	background-size: contain;
+}
+
+.living-abyss {
+	background: 
+		url("https://static.wikia.nocookie.net/cookierunkingdom/images/7/77/Enemy_living_licorice_abyss.png") right no-repeat,
+		linear-gradient(135deg, #1447E6, #8EC5FF);
+	background-size: contain;
+}
+
+.machine-god {
+	background: 
+		url("https://static.wikia.nocookie.net/cookierunkingdom/images/0/01/Enemy_machine-god_of_the_eternal_void.png") right no-repeat,
+		linear-gradient(135deg, #1F7A55, #31D492);
+	background-size: contain;
+}
+
+.dark-choco { background: url("https://static.wikia.nocookie.net/cookierunkingdom/images/c/c9/Dark_choco_gacha_background.jpg"); }

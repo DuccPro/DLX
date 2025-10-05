@@ -1,0 +1,202 @@
+/* Team */
+
+.team {
+	max-width: 1000px;
+	margin: 20px auto;
+	background-color: #282828;
+	overflow: hidden;
+}
+
+.team .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+hr {
+	width: calc(100% - 40px);
+	margin: 0 20px;
+	border: none;
+	height: 5px;
+	background-color: #3f3f3f;
+	border-radius: 2.5px;
+}
+	
+
+/* Treasures */
+
+.treasures {
+	display: flex;
+	gap: 10px;
+}
+
+.treasures div {
+	position: relative;
+	height: 100%;
+}
+
+.treasures img {
+	max-height: 100%;
+}
+
+.treasures div img:nth-child(2) {
+	position: absolute;
+	animation: variant 10s infinite;
+	top: 0;
+	left: 0;
+}
+
+@keyframes variant {
+	0%, 40%, 100% { opacity: 0; }
+	50%, 90% { opacity: 1; }
+}
+
+/* Cookie */
+
+.cookie {
+	position: relative;
+	display: grid;
+	padding: 20px;
+	align-items: center;
+}
+
+.cookie div {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	height: 100px;
+	align-items: center;
+}
+
+.cookie img:first-child, .beascuit img, .toppings img:first-child {
+	height: 100%;
+	object-fit: contain;
+}
+
+h2 {
+	height: 100%;
+}
+
+
+/* Toppings */
+
+.toppings img:nth-child(2) {
+	position: absolute;
+	height: 42%;
+	transform: translate(-50%, -50%) rotate(0deg);
+	left: 50%;
+	top: 28%;
+}
+
+.toppings img:nth-child(3) {
+	position: absolute;
+	height: 42%;
+	transform: translate(-50%, -50%) rotate(-72deg);
+	left: 28%;
+	top: 43%;
+}
+
+.toppings img:nth-child(4) {
+	position: absolute;
+	height: 42%;
+	transform: translate(-50%, -50%) rotate(72deg);
+	left: 72%;
+	top: 43%;
+}
+
+.toppings img:nth-child(5) {
+	position: absolute;
+	height: 42%;
+	transform: translate(-50%, -50%) rotate(-144deg);
+	left: 36%;
+	top: 68%;
+}
+
+.toppings img:nth-child(6) {
+	position: absolute;
+	height: 42%;
+	transform: translate(-50%, -50%) rotate(144deg);
+	left: 64%;
+	top: 68%;
+}
+
+/* Stats */
+
+ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 10px;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	background-color: #3f3f3f;
+	border-radius: 15px;
+	list-style: none;
+	padding: 5px 10px;
+}
+
+@media (min-width: 801px) {
+	.team {
+		border-radius: 20px;
+	}
+	.cookie {
+	grid-template-columns: auto auto 1fr auto 1fr;
+	border-radius: 20px;
+	gap: 20px;
+	}
+	.treasures {
+	height: 60px;
+	}
+	.vertical {
+		display: none;
+	}
+	.magic-candy {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		height: 30px;
+		filter: drop-shadow(0 0 3px #FFFFFF);
+	}
+}
+
+@media (max-width: 800px) {
+	.cookie {
+		grid-template-columns: auto 1fr;
+		gap: 10px;
+	}
+	.treasures {
+	height: 40px;
+	}
+	.horizontal {
+		display: none;
+	}
+	.cookie .name {
+		grid-column: span 2;
+		height: 50px;
+		display: flex;
+	}
+	.name h2 {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin: 0;
+	}
+	.name div {
+		position: relative;
+		max-height: 100%;
+	}
+	.magic-candy {
+		position: absolute;
+		height: 30px;
+		top: -5px;
+		right: -10px;
+	}
+}
+
+.beascuit img:nth-child(2) {
+	position: absolute;
+}
