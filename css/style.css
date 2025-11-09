@@ -1,0 +1,76 @@
+:root {
+  --surface-primary: #121212;
+  --surface-secondary: #282828;
+  --surface-tartiary: #3f3f3f;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B3B3B3;
+  --text-highlight: #a0872e;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Outfit', sans-serif;
+}
+
+body {
+	background-color: var(--surface-primary);
+	color: var(--text-primary);
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	display: flex;
+	background-color: var(--surface-primary);
+	padding: 10px 20px;
+	gap: 40px;
+	align-items: center;
+	z-index: 99;
+}
+
+nav > div {
+	position: relative;
+	padding: 10px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+nav > div > div {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 150px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--surface-secondary);
+	color: var(--text-secondary);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	font-size: 1rem;
+	font-weight: 500;
+	border-radius: 5px;
+	transform: translateY(-10px);
+}
+
+nav > div:hover> div {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--text-secondary);
+	border-radius: 5px;
+	padding: 5px 10px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	white-space: nowrap;
+}
+
+nav a:hover {
+	background-color: var(--surface-tartiary);
+	color: var(--text-highlight);
+}

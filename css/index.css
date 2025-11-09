@@ -1,0 +1,108 @@
+main {
+	display: grid;
+	margin: 20px;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	text-shadow: 2px 2px 5px #000000;
+	grid-auto-rows: 1fr;
+}
+
+section, main > article {
+	border-radius: 20px;
+	overflow: hidden;
+	align-items: center;
+}
+
+section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column: span 2;
+	align-items: flex-start
+}
+
+section div {
+	grid-column: span 2;
+	text-align: center;
+	padding: 20px;
+	text-align: center;
+}
+
+section article {
+	align-items: flex-start;
+}
+
+main article {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	gap: 10px;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 1.5rem; }
+main > article a { font-size: 1.5rem; }
+
+main a {
+	padding: 10px 25px;
+	border: 2px solid white;
+	border-radius: 999px;
+	background: #00000010;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	transition: transform 0.2s ease;
+	text-shadow: none;
+	text-decoration: none;
+	color: var(--text-primary);
+	white-space: nowrap;
+}
+
+main a:hover {
+	animation: glow 1.5s infinite;
+	transform: translateY(-2px)
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 10px #FFFFFF88, 0 0 15px #FFFFFF55;
+  }
+  50% {
+    box-shadow: 0 0 15px #FFFFFFCC, 0 0 20px #FFFFFF88;
+  }
+}
+
+/* Background */
+
+.red-velvet-dragon {
+	background: 
+		url("https://static.wikia.nocookie.net/cookierunkingdom/images/a/a2/M80001_map_thumbnail.png") right no-repeat,
+		linear-gradient(135deg, #9F0712, #FFA2A2);
+	background-size: contain;
+}
+.avatar-of-destiny {
+	background: 
+		url("https://static.wikia.nocookie.net/cookierunkingdom/images/6/6f/M83001_map_thumbnail.png") right no-repeat,
+		linear-gradient(135deg, #FFDF20, #FEFCE8);
+	background-size: contain;
+}
+.living-abyss {
+	background: 
+		url("https://static.wikia.nocookie.net/cookierunkingdom/images/7/77/Enemy_living_licorice_abyss.png") right no-repeat,
+		linear-gradient(135deg, #1447E6, #8EC5FF);
+	background-size: contain;
+}
+.machine-god {
+	background: 
+		url("https://static.wikia.nocookie.net/cookierunkingdom/images/0/01/Enemy_machine-god_of_the_eternal_void.png") right no-repeat,
+		linear-gradient(135deg, #1F7A55, #31D492);
+	background-size: contain;
+}
+
+.guild-battle-guides {
+	background: url("../img/guild-battle.png");
+	background-position: 10% 60%;
+}
+.arena { background: url("../img/arena.png") center }
+.alliance { background: url("https://static.wikia.nocookie.net/cookierunkingdom/images/b/ba/Cookie_alliance_season_background.png") center }
+.cooldown { background: url("https://static.wikia.nocookie.net/cookierunkingdom/images/f/f3/Cutscene_special_episode05_10.png") center }
