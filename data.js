@@ -134,7 +134,7 @@ const data = [
 			role: "support",
 			position: "middle",
 			element: ["poison","chaos"],
-			alias: ["ppd"],
+			alias: ["ppdc"],
 			builds: [{
 				title: "Red Velvet Dragon",
 				beascuitImgs: ["img/base/support.png","img/core/support04.png"],
@@ -211,7 +211,7 @@ const data = [
 			role: "charge",
 			position: "front",
 			element: ["chaos"],
-			alias: ["mdough"],
+			alias: ["mdough","mdc"],
 			builds: [
 			{
 				title: "General",
@@ -448,7 +448,7 @@ const data = [
 			role: "bomber",
 			position: "rear",
 			element: ["chaos"],
-			alias: ["cchoco"],
+			alias: ["cchoco","ccc"],
 			builds: [
 			{
 				title: "PVE",
@@ -487,7 +487,7 @@ const data = [
 			role: "defense",
 			position: "front",
 			element: ["steel"],
-			alias: ["scellar"],
+			alias: ["scellar","scc"],
 			builds: [
 			{
 				title: "PVE",
@@ -777,7 +777,7 @@ const data = [
 			role: "charge",
 			position: "front",
 			element: ["electricity"],
-			alias: ["gfruit"],
+			alias: ["gfruit","gfc"],
 			builds: [
 			{
 				title: "General",
@@ -927,7 +927,7 @@ const data = [
 			role: "support",
 			position: "rear",
 			element: [],
-			alias: ["mbunny","mbc"],
+			alias: ["mbunny","marshbunny","mbc"],
 			builds: [
 			{
 				title: "General",
@@ -980,7 +980,7 @@ const data = [
 			role: "charge",
 			position: "front",
 			element: ["water"],
-			alias: ["csoda"],
+			alias: ["csoda","csc"],
 			builds: [
 			{
 				title: "General",
@@ -1005,7 +1005,7 @@ const data = [
 			role: "support",
 			position: "rear",
 			element: [],
-			alias: ["sfly"],
+			alias: ["sfly","sfc"],
 			builds: [
 			{
 				title: "General",
@@ -1178,7 +1178,7 @@ const data = [
 			role: "ambush",
 			position: "middle",
 			element: ["fire","electricity","water","wind","ice"],
-			alias: ["aa"],
+			alias: ["aac"],
 			builds: [
 			{
 				title: "PVE",
@@ -1256,7 +1256,7 @@ const data = [
 			role: "magic",
 			position: "middle",
 			element: [],
-			alias: ["wc"],
+			alias: ["wcc"],
 			builds: [
 			{
 				title: "LA",
@@ -1295,7 +1295,7 @@ const data = [
 			role: "charge",
 			position: "front",
 			element: [],
-			alias: ["bf"],
+			alias: ["bfc"],
 			builds: [
 			{
 				title: "LA",

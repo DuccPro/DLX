@@ -121,11 +121,29 @@ function filter() {
 	const p = filters.position;
 	const e = filters.element;
 
+	const splitWords = str =>
+		str.toLowerCase().split(/[\s-]+/);
+
+	const matchesQuery = (str, raw) => {
+		const words = splitWords(str);
+
+		// normal word-start match
+		if (words.some(w => w.startsWith(q))) return true;
+
+		// exact substring match ONLY if query includes hyphen or is multi-character explicit string
+		if (q.includes("-") && raw.includes(q)) return true;
+
+		return false;
+	};
+
 	const out = data.filter(c => {
+		const name = c.name.toLowerCase();
+		const aliases = c.alias || [];
+
 		const textMatch =
 			!q ||
-			c.name.toLowerCase().includes(q) ||
-			(c.alias || []).some(a => a.includes(q));
+			matchesQuery(name, name) ||
+			aliases.some(a => matchesQuery(a.toLowerCase(), a.toLowerCase()));
 
 		const match =
 			(r === "all" || c.rarity === r) &&
