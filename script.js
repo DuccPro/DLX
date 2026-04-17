@@ -122,18 +122,22 @@ function filter() {
 	const e = filters.element;
 
 	const splitWords = str =>
+		str.toLowerCase().split(/\s+/);
+
+	const splitStrict = str =>
 		str.toLowerCase().split(/[\s-]+/);
 
-	const matchesQuery = (str, raw) => {
-		const words = splitWords(str);
+	const matchesQuery = (str) => {
+		const raw = str.toLowerCase();
 
-		// normal word-start match
-		if (words.some(w => w.startsWith(q))) return true;
-
-		// exact substring match ONLY if query includes hyphen or is multi-character explicit string
 		if (q.includes("-") && raw.includes(q)) return true;
 
-		return false;
+		const targetWords = splitStrict(str);
+		const queryWords = splitWords(q);
+
+		return queryWords.every(qw =>
+			targetWords.some(tw => tw.startsWith(qw))
+		);
 	};
 
 	const out = data.filter(c => {
@@ -142,8 +146,8 @@ function filter() {
 
 		const textMatch =
 			!q ||
-			matchesQuery(name, name) ||
-			aliases.some(a => matchesQuery(a.toLowerCase(), a.toLowerCase()));
+			matchesQuery(name) ||
+			aliases.some(a => matchesQuery(a));
 
 		const match =
 			(r === "all" || c.rarity === r) &&

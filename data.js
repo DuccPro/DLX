@@ -1326,5 +1326,375 @@ const data = [
 				substats: ["CRIT%","ATK"],
 				requirement: "33.9% ATK SPD"
 			}
+	]},
+	{
+			name: "Black Sapphire Cookie",
+			icon: "img/card/black_sapphire.png",
+			rarity: "epic",
+			role: "support",
+			position: "middle",
+			element: ["poison"],
+			alias: ["bsapph","bsc"],
+			builds: [
+	]},
+	{
+			name: "Candy Apple Cookie",
+			icon: "img/card/candy_apple.png",
+			rarity: "epic",
+			role: "bomber",
+			position: "middle",
+			element: [],
+			alias: ["capple","cac"],
+			builds: [
+	]},
+	{
+			name: "Shadow Milk Cookie",
+			icon: "img/card/shadow_milk.png",
+			rarity: "beast",
+			role: "magic",
+			position: "middle",
+			element: [],
+			alias: ["smilk","smc"],
+			builds: [
+	]},
+	{
+			name: "Okchun Cookie",
+			icon: "img/card/okchun.png",
+			rarity: "epic",
+			role: "healing",
+			position: "middle",
+			element: [],
+			alias: [],
+			builds: [
+	]},
+	{
+			name: "Green Tea Mousse Cookie",
+			icon: "img/card/green_tea_mousse.png",
+			rarity: "epic",
+			role: "defense",
+			position: "front",
+			element: ["wind","grass"],
+			alias: ["gtmc"],
+			builds: [
+	]},
+	{
+			name: "Pudding a la Mode Cookie",
+			icon: "img/card/pudding_a_la_mode.png",
+			rarity: "epic",
+			role: "bomber",
+			position: "rear",
+			element: ["electricity"],
+			alias: ["palmc"],
+			builds: [
+	]},
+	{
+			name: "Choco Drizzle Cookie",
+			icon: "img/card/choco_drizzle.png",
+			rarity: "epic",
+			role: "ambush",
+			position: "middle",
+			element: ["darkness"],
+			alias: ["cdc"],
+			builds: [
+	]},
+	{
+			name: "Red Osmanthus Cookie",
+			icon: "img/card/red_osmanthus.png",
+			rarity: "epic",
+			role: "ranged",
+			position: "middle",
+			element: ["grass"],
+			alias: [],
+			builds: [
+	]},
+	{
+			name: "Golden Osmanthus Cookie",
+			icon: "img/card/golden_osmanthus.png",
+			rarity: "epic",
+			role: "bomber",
+			position: "middle",
+			element: ["grass"],
+			alias: [],
+			builds: [
+	]},
+	{
+			name: "Camellia Cookie",
+			icon: "img/card/camellia.png",
+			rarity: "super epic",
+			role: "charge",
+			position: "front",
+			element: ["grass"],
+			alias: [],
+			builds: [
+	]},
+	{
+			name: "Smoked Cheese Cookie",
+			icon: "img/card/smoked_cheese.png",
+			rarity: "epic",
+			role: "magic",
+			position: "rear",
+			element: ["earth"],
+			alias: ["scc"],
+			builds: [
+	]},
+	{
+			name: "Nutmeg Tiger Cookie",
+			icon: "img/card/nutmeg_tiger.png",
+			rarity: "epic",
+			role: "support",
+			position: "rear",
+			element: ["fire"],
+			alias: ["ntc"],
+			builds: [
+	]},
+	{
+			name: "Burning Spice Cookie",
+			icon: "img/card/burning_spice.png",
+			rarity: "beast",
+			role: "charge",
+			position: "front",
+			element: ["fire"],
+			alias: ["bspice","bsc"],
+			builds: [
+	]},
+	{
+			name: "Wind Archer Cookie",
+			icon: "img/card/wind_archer.png",
+			rarity: "legendary",
+			role: "ranged",
+			position: "rear",
+			element: ["wind"],
+			alias: ["warcher","wac"],
+			builds: [
+	]},
+	{
+			name: "Star Coral Cookie",
+			icon: "img/card/star_coral.png",
+			rarity: "epic",
+			role: "support",
+			position: "rear",
+			element: [],
+			alias: ["scoral","scc"],
+			builds: [
+	]},
+	{
+			name: "Cream Ferret Cookie",
+			icon: "img/card/cream_ferret.png",
+			rarity: "special",
+			role: "support",
+			position: "rear",
+			element: [],
+			alias: ["cferret","cfc"],
+			builds: [
+	]},
+	{
+			name: "Peach Blossom Cookie",
+			icon: "img/card/peach_blossom.png",
+			rarity: "epic",
+			role: "support",
+			position: "middle",
+			element: [],
+			alias: ["pblossom","pbc"],
+			builds: [
+	]},
+	{
+			name: "Cloud Haetae Cookie",
+			icon: "img/card/cloud_haetae.png",
+			rarity: "epic",
+			role: "defense",
+			position: "front",
+			element: [],
+			alias: ["chaetae","chc"],
+			builds: [
+	]},
+	{
+			name: "Mystic Flour Cookie",
+			icon: "img/card/mystic_flour.png",
+			rarity: "beast",
+			role: "healing",
+			position: "rear",
+			element: [],
+			alias: ["mflour","mfc"],
+			builds: [
+	]},
+	{
+			name: "Stormbringer Cookie",
+			icon: "img/card/stormbringer.png",
+			rarity: "legendary",
+			role: "charge",
+			position: "front",
+			element: ["electricity"],
+			alias: ["sbringer","sbc"],
+			builds: [
+	]},
+	{
+			name: "Street Urchin Cookie",
+			icon: "img/card/street_urchin.png",
+			rarity: "epic",
+			role: "bomber",
+			position: "middle",
+			element: ["fire"],
+			alias: ["surchin","suc"],
+			builds: [
+	]},
+	{
+			name: "Caramel Choux Cookie",
+			icon: "img/card/caramel_choux.png",
+			rarity: "epic",
+			role: "support",
+			position: "rear",
+			element: [],
+			alias: ["ccc"],
+			builds: [
+	]},
+	{
+			name: "Butter Roll Cookie",
+			icon: "img/card/butter_roll.png",
+			rarity: "epic",
+			role: "charge",
+			position: "front",
+			element: ["steel","chaos"],
+			alias: ["brc"],
+			builds: [
+	]},
+	{
+			name: "Elder Faerie Cookie",
+			icon: "img/card/elder_faerie.png",
+			rarity: "super epic",
+			role: "defense",
+			position: "front",
+			element: ["steel"],
+			alias: ["efaerie","efc"],
+			builds: [
+	]},
+	{
+			name: "Matcha Cookie",
+			icon: "img/card/matcha.png",
+			rarity: "epic",
+			role: "magic",
+			position: "middle",
+			element: ["poison","grass"],
+			alias: [],
+			builds: [
+	]},
+	{
+			name: "Mercurial Knight Cookie",
+			icon: "img/card/mercurial_knight.png",
+			rarity: "epic",
+			role: "charge",
+			position: "front",
+			element: ["steel"],
+			alias: ["mkc"],
+			builds: [
+	]},
+	{
+			name: "Silverbell Cookie",
+			icon: "img/card/silverbell.png",
+			rarity: "epic",
+			role: "support",
+			position: "rear",
+			element: ["grass"],
+			alias: ["sbell","sbc"],
+			builds: [
+	]},
+	{
+			name: "White Lily Cookie",
+			icon: "img/card/white_lily.png",
+			rarity: "ancient",
+			role: "bomber",
+			position: "middle",
+			element: ["grass"],
+			alias: ["wlily","willy","wlc"],
+			builds: [
+	]},
+	{
+			name: "Rebel Cookie",
+			icon: "img/card/rebel.png",
+			rarity: "epic",
+			role: "ambush",
+			position: "front",
+			element: ["wind"],
+			alias: [],
+			builds: [
+	]},
+	{
+			name: "Linzer Cookie",
+			icon: "img/card/linzer.png",
+			rarity: "epic",
+			role: "support",
+			position: "rear",
+			element: [],
+			alias: [],
+			builds: [
+	]},
+	{
+			name: "Creme Brulee Cookie",
+			icon: "img/card/creme_brulee.png",
+			rarity: "epic",
+			role: "ranged",
+			position: "rear",
+			element: ["light"],
+			alias: ["cbrulee","cbc"],
+			builds: [
+	]},
+	{
+			name: "Icicle Yeti Cookie",
+			icon: "img/card/icicle_yeti.png",
+			rarity: "special",
+			role: "healing",
+			position: "front",
+			element: ["ice"],
+			alias: ["iyc"],
+			builds: [
+	]},
+	{
+			name: "Olive Cookie",
+			icon: "img/card/olive.png",
+			rarity: "epic",
+			role: "support",
+			position: "rear",
+			element: ["earth","fire","electricity"],
+			alias: [],
+			builds: [
+	]},
+	{
+			name: "Mozzarella Cookie",
+			icon: "img/card/mozzarella.png",
+			rarity: "epic",
+			role: "magic",
+			position: "middle",
+			element: ["earth"],
+			alias: [],
+			builds: [
+	]},
+	{
+			name: "Fettuccine Cookie",
+			icon: "img/card/fettucine.png",
+			rarity: "epic",
+			role: "defense",
+			position: "front",
+			element: ["earth"],
+			alias: [],
+			builds: [
+	]},
+	{
+			name: "Burnt Cheese Cookie",
+			icon: "img/card/burnt_cheese.png",
+			rarity: "epic",
+			role: "charge",
+			position: "front",
+			element: ["earth"],
+			alias: ["bcc"],
+			builds: [
+	]},
+	{
+			name: "Golden Cheese Cookie",
+			icon: "img/card/golden_cheese.png",
+			rarity: "ancient",
+			role: "ranged",
+			position: "middle",
+			element: ["earth"],
+			alias: ["gcheese","gcc"],
+			builds: [
 	]}
 ];
